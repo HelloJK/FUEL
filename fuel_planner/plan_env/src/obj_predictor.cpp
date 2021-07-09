@@ -97,8 +97,8 @@ void ObjPredictor::predictPolyFit() {
     vector<Eigen::Matrix<double, 6, 1>> pm(3);
 
     A.setZero();
-    for (int i = 0; i < 3; ++i)
-      bm[i].setZero();
+    for (int j = 0; j < 3; ++j)
+      bm[j].setZero();
 
     /* ---------- estimation error ---------- */
     list<Eigen::Vector4d> his;
